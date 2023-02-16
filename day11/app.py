@@ -50,8 +50,8 @@ recommended_items = {
         'image' : 'book5.jpeg'
 
     }
-
 }
+
 
 
 
@@ -253,12 +253,17 @@ book_list = {
 
 
 
+
+
 reviews = {
     1: {'id' : 1,
         'review_1' : 'This book is really fantastic!!!!!',
         'review_2': 'The book has interesting content. I would recommend for all readers!!!'
     }
 }
+
+
+
 
 
 bestsellers = {
