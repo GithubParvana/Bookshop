@@ -390,7 +390,7 @@ def books(id):
     book_list = Book.query.all()
     genres = Genre.query.all()
     langs = Language.query.all()
-    book = Book.query.filter_by(id=id).first
+    book = Book.query.filter_by(id=id).first()
     return render_template('book.html', book=book, book_list=book_list, genres=genres, langs=langs)
 
 
