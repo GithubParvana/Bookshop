@@ -1,4 +1,4 @@
-from flask import render_template, request
+from flask import render_template, request, redirect
 from app import app
 from models import *
 from forms import *
@@ -408,6 +408,8 @@ def books(id):
                 book_id = book.id
             )
             contact.save()
+            
+
     contacts=Contact.query.all()
     return render_template('book.html', book=book, book_list=book_list, langs=langs, gen=gen, form = form, contacts=contacts)
 
