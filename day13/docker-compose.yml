@@ -12,7 +12,9 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: '123'
       MYSQL_DATABASE: 'form'
-
+    
+    volumes:
+      - ./mydb:/var/lib/mysql
   adminer:
     image: adminer
     restart: always
